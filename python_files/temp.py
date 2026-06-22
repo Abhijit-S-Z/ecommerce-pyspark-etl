@@ -1,0 +1,1 @@
+print("abc.txt".split(".")[-1])
