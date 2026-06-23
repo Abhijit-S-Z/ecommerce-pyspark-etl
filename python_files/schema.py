@@ -33,10 +33,10 @@ orders_schema = StructType([
 
 # "order_id","order_item_id","product_id","seller_id","shipping_limit_date","price","freight_value"
 items_schema = StructType([
-    StructField("order_id", IntegerType(), False),
+    StructField("order_id", StringType(), False),
     StructField("order_item_id", IntegerType(), False),
     StructField("product_id", StringType(), False),
-    StructField("seller_id", TimestampType(), False),
+    StructField("seller_id", StringType(), False),
     StructField("shipping_limit_date", TimestampType(), True),
     StructField("price", DateType(), True),
     StructField("freight_value", IntegerType(), True)

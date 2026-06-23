@@ -1,1 +1,5 @@
-print("abc.txt".split(".")[-1])
+import os
+print(os.environ.get("HADOOP_HOME"))
+
+import sys
+print(sys.version)
